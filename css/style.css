@@ -1,0 +1,91 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Roboto Condensed", sans-serif;
+	background: #070a1b;
+	font-size: 16px;
+	line-height: 120%;
+	font-weight: 400;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.social__list {
+	display: flex;
+}
+.social__item {
+}
+.social__item + .social__item {
+	margin-left: 30px;
+}
+.social__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	transition: background 0.3s;
+}
+.social__link:hover {
+	background: #c1a1d2;
+}
+.social__img img {
+	max-width: 100%;
+}
+
+/*--- Header ---*/
+.header {
+}
+.header__body {
+	min-height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__menu {
+}
+.header__menu-img {
+}
+.header__logo {
+}
+.logo {
+}
+.logo__img {
+}
+.header__list {
+}
