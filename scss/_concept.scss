@@ -1,0 +1,25 @@
+.concept {
+	padding: 150px 0;
+	&__body {
+		max-width: 900px;
+		margin-left: auto;
+		& > *:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__title {
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 120%;
+	}
+
+	&__image {
+		position: relative;
+		padding-bottom: 55.56%;
+	}
+	&__img {
+	}
+}

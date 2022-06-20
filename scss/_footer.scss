@@ -1,0 +1,23 @@
+.footer {
+	background: #070a1b;
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 300px;
+	}
+
+	&__policy-link {
+		transition: all 0.3s;
+		&:hover {
+			color: #c1a1d2;
+			text-decoration: underline;
+		}
+	}
+
+	&__logo {
+	}
+
+	&__social-list {
+	}
+}
