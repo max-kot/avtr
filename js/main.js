@@ -7,6 +7,22 @@ $(function () {
 		nextArrow: '<img src="img/design/slider/next.svg" alt="" class="slider__next">',
 		autoplay: true,
 		autoplaySpeed: 3000,
+		responsive: [
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 2,
+					variableWidth: false,
+					autoplay: false,
+				},
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+				},
+			},
+		],
 	}
 	);
 });

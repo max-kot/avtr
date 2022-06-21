@@ -11,6 +11,9 @@
 		grid-template-columns: 255px 255px auto 330px;
 		grid-template-rows: 450px auto;
 		gap: 14px 44px;
+		@media (max-width: 768px) {
+			display: block;
+		}
 	}
 
 	&__item {
@@ -33,6 +36,12 @@
 	&__item--image-big {
 		grid-column: 2/5;
 		position: relative;
+		img {
+			max-width: 100%;
+		}
+		@media (max-width: 768px) {
+			padding: 25px 0;
+		}
 	}
 
 	&__img {
@@ -48,16 +57,26 @@
 		grid-column-end: -1;
 		display: flex;
 		align-items: flex-end;
+		@media (max-width: 768px) {
+			padding-top: 25px;
+			img {
+				width: 100%;
+			}
+		}
 	}
 }
 
 .slider {
-	padding-bottom: 25px;
+	padding-bottom: 45px;
 	&__list {
 	}
 
 	&__item {
 		margin: 0 30px;
+
+		@media (max-width: 768px) {
+			max-width: 100%;
+		}
 		img {
 			max-width: 100%;
 		}
@@ -71,11 +90,14 @@
 }
 .slick-track {
 	margin-left: -140px;
+	@media (max-width: 768px) {
+		margin-left: 0;
+	}
 }
 .slick-arrow {
 	position: absolute;
 	z-index: 10;
-	bottom: -25px;
+	bottom: -45px;
 	cursor: pointer;
 	left: 50%;
 }
@@ -90,6 +112,11 @@
 		justify-content: center;
 		margin: 150px auto;
 		gap: 60px;
+		@media (max-width: 768px) {
+			margin: 50px auto;
+			flex-direction: column;
+			gap: 30px;
+		}
 	}
 
 	&__descr {

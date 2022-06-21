@@ -1,5 +1,8 @@
 .concept {
 	padding: 150px 0;
+	@media (max-width: 768px) {
+		padding: 50px 0;
+	}
 	&__body {
 		max-width: 900px;
 		margin-left: auto;
@@ -14,6 +17,9 @@
 	&__text {
 		font-size: 24px;
 		line-height: 120%;
+		@media (max-width: 768px) {
+			font-size: 16px;
+		}
 	}
 
 	&__image {
