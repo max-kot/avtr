@@ -1,0 +1,44 @@
+.main-page {
+	&__premier {
+	}
+}
+.premier {
+	padding-bottom: 150px;
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		gap: 60px;
+	}
+
+	&__column {
+		& > *:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__title {
+	}
+
+	&__text {
+		line-height: 120%;
+	}
+
+	&__image {
+		&--small {
+			padding-bottom: 70.18%;
+		}
+		&--big {
+			padding-bottom: 124%;
+			img {
+				object-position: left;
+			}
+		}
+	}
+
+	&__img {
+	}
+
+	&__btn {
+		width: 100%;
+	}
+}

@@ -8,7 +8,7 @@ html {
 	box-sizing: inherit;
 }
 @font-face {
-	font-family: "Corpotate-A";
+	font-family: "Corporate-A";
 	font-style: normal;
 	font-weight: 700;
 	src: url("../fonts/Corporate-A-Bold.woff2") format("woff2"), url("../fonts/Corporate-A-Bold.woff") format("woff");
@@ -58,6 +58,12 @@ ul {
 	&__item {
 		& + .social__item {
 			margin-left: 30px;
+			@media (max-width: 768px) {
+				margin-left: 5px;
+			}
+			@media (max-width: 425px) {
+				margin-left: 0;
+			}
 		}
 	}
 
@@ -71,6 +77,14 @@ ul {
 		transition: background 0.3s;
 		&:hover {
 			background: #c1a1d2;
+		}
+		@media (max-width: 768px) {
+			width: 40px;
+			height: 40px;
+		}
+		@media (max-width: 425px) {
+			width: 35px;
+			height: 35px;
 		}
 	}
 
@@ -96,7 +110,7 @@ ul {
 .title {
 	color: #f402a2;
 	text-transform: uppercase;
-	font-family: "Corpotate-A", sans-serif;
+	font-family: "Corporate-A", sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 120%;
@@ -106,5 +120,25 @@ ul {
 	&__first {
 	}
 	&__concept {
+	}
+	&__video-block {
+	}
+}
+
+.btn {
+	display: block;
+	font-family: "Corporate-A", sans-serif;
+	text-transform: uppercase;
+	min-height: 22px;
+	padding: 14px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 120%;
+	color: #f402a2;
+	border: 1px solid #f402a2;
+	transition: all 0.3s;
+	&:hover {
+		border-color: #53a1cb;
+		color: #53a1cb;
 	}
 }
